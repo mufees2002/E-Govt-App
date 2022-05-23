@@ -92,4 +92,6 @@ Interview (Personality Test)
     <string name="lbl_upsc_exam">UPSC Exam</string>
     <string name="lbl_apply">    APPLY</string>
     <string name="msg_this_contact_has_no_phone_nu">This contact has no phone number</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
