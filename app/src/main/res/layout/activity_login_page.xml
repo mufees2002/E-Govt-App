@@ -13,6 +13,7 @@
             android:id="@+id/txtLogin"
             style="@style/txtIntersemibold30"
             android:layout_width="125dp"
+            android:textColor="@color/black"
             android:layout_height="0dp"
             android:layout_marginStart="@dimen/_172pxh"
             android:layout_marginTop="@dimen/_28pxv"
@@ -30,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_9pxh"
             android:layout_marginStart="@dimen/_8pxh"
+            android:textColor="@color/black"
             android:layout_marginTop="@dimen/_82pxv"
             android:layout_width="0dp"
             android:paddingBottom="@dimen/_16pxv"
@@ -46,6 +48,7 @@
             android:layout_marginTop="@dimen/_48pxv"
             android:layout_width="0dp" android:scaleType="fitXY"
             android:src="@drawable/img_bg"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@+id/btnLogIn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.07"
@@ -86,24 +89,29 @@
                 app:layout_constraintTop_toTopOf="parent"
                 style="@style/txtIntermedium16_1" tools:text="@string/lbl_show"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.appcompat.widget.AppCompatButton
-            android:ellipsize="end" android:gravity="center"
             android:id="@+id/btnLogIn"
-            android:layout_height="@dimen/_51pxv"
-            android:layout_marginEnd="@dimen/_7pxh"
-            android:layout_marginStart="@dimen/_10pxh"
-            android:layout_marginTop="@dimen/_140pxv"
+            style="@style/btnSolidRounded"
             android:layout_width="0dp"
-            android:paddingBottom="@dimen/_16pxv"
-            android:paddingEnd="@dimen/_30pxh"
+            android:layout_height="@dimen/_51pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="@dimen/_7pxh"
+            android:ellipsize="end"
+            android:gravity="center"
             android:paddingStart="@dimen/_30pxh"
-            android:paddingTop="@dimen/_16pxv" android:singleLine="true"
+            android:paddingTop="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_16pxv"
+            android:singleLine="true"
             android:text="@string/lbl_log_in2"
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageBG"
-            style="@style/btnSolidRounded" tools:text="@string/lbl_log_in2"/>
+            tools:text="@string/lbl_log_in2" />
 
         <TextView
             android:id="@+id/txtForgotYourPas"
