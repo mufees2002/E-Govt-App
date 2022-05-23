@@ -202,5 +202,9 @@
         android:layout_width="309dp"
         android:layout_height="127dp"
         tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="559dp" />
+        tools:layout_editor_absoluteY="559dp"
+        tools:ignore="MissingConstraints">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
