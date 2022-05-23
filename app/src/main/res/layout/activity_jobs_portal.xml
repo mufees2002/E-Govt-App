@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="jobsPortalVM" type="com.application.app.modules.jobsportal.data.viewmodel.JobsPortalVM"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintJobsportal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtNEWS"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_201pxh"
+            android:layout_marginStart="@dimen/_117pxh"
+            android:layout_marginTop="@dimen/_54pxv"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@{jobsPortalVM.jobsPortalModel.txtNEWS}"
+            app:layout_constraintEnd_toEndOf="@+id/toolbarToolbar"
+            app:layout_constraintStart_toStartOf="@+id/toolbarToolbar"
+            app:layout_constraintTop_toTopOf="@+id/toolbarToolbar"
+            style="@style/txtUbuntubold20" tools:text="@string/lbl_news"/>
+        <ImageView android:id="@+id/imageRectangle2"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_6pxv"
+            android:layout_width="0dp" android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle2"
+            app:layout_constraintBottom_toBottomOf="@+id/txtNEWS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.12"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6pxv"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectangle2"
+            app:layout_constraintStart_toStartOf="@+id/imageRectangle2" app:layout_constraintTop_toTopOf="@+id/imageRectangle2">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintGroup54"
+                android:layout_height="match_parent" android:layout_width="match_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup73"
+                    android:layout_height="0dp"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.68"
+                    app:layout_constraintStart_toEndOf="@+id/constraintGroup76"
+                    app:layout_constraintTop_toTopOf="parent" style="@style/groupStylewhite_A700cornerRadius">
+                    <ImageView android:id="@+id/imageProfileicon9"
+                        android:layout_height="@dimen/_47pxh"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="@dimen/_71pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_profileicon9"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageProfile31"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@+id/imageProfile31"/>
+                    <ImageView android:id="@+id/imageProfile31"
+                        android:layout_height="@dimen/_63pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_width="@dimen/_71pxh"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_profile31}" tools:src="@drawable/img_profile31"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup76"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_194pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/constraintGroup73"
+                    app:layout_constraintHorizontal_bias="0.06"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtJOBS"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{jobsPortalVM.jobsPortalModel.txtJOBS}"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageMenu"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.15"
+                        app:layout_constraintStart_toEndOf="@+id/imageMenu"
+                        app:layout_constraintTop_toTopOf="@+id/imageMenu"
+                        style="@style/txtUbuntubold20" tools:text="@string/lbl_jobs"/>
+                    <ImageView android:id="@+id/imageMenu"
+                        android:layout_height="@dimen/_47pxh"
+                        android:layout_width="@dimen/_42pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_menu"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtJOBS"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerJobsPortal"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_72pxv"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="0dp" android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNEWS"
+            itemSpace="@{@dimen/_16pxh}" tools:itemCount="4" tools:listitem="@layout/row_jobs_portal1"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

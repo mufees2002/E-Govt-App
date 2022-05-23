@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="examMaterial1VM" type="com.application.app.modules.exammaterial1.data.viewmodel.ExamMaterial1VM"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintExammaterial1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup175"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_124pxv"
+            android:layout_marginTop="@dimen/_43pxv"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageImage2" style="@style/groupStylewhite_2">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtExamMaterialV"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_27pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="0dp" android:singleLine="true"
+                android:text="@{examMaterial1VM.examMaterial1Model.txtExamMaterialV}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/txtUbuntubold20_1" tools:text="@string/msg_exam_material_v"/>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollGroup183"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_marginEnd="@dimen/_182pxh"
+                android:layout_marginBottom="@dimen/_26pxv"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtExamMaterialV"
+                app:layout_constraintVertical_bias="1.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup174"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintGroup181"
+                        style="@style/groupStylewhite_4"
+                        android:layout_width="183dp"
+                        android:layout_height="138dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/constraintGroup177"
+                        app:layout_constraintHorizontal_bias="0.08"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageUpsc12"
+                            circular="@{true}"
+                            imageRes="@{@drawable/img_upsc12}"
+                            android:layout_width="@dimen/_107pxh"
+                            android:layout_height="@dimen/_103pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_marginEnd="@dimen/_107pxh"
+                            android:layout_marginBottom="@dimen/_35pxv"
+                            android:scaleType="fitXY"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:src="@drawable/img_upsc12" />
+
+                        <TextView
+                            android:id="@+id/txtUPSC"
+                            style="@style/txtUbuntubold20_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_88pxh"
+                            android:layout_marginTop="@dimen/_54pxv"
+                            android:layout_marginBottom="@dimen/_22pxv"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@{examMaterial1VM.examMaterial1Model.txtUPSC}"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageUpsc12"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/imageUpsc12"
+                            tools:text="@string/lbl_upsc" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintGroup177"
+                        style="@style/groupStylewhite_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_52pxh"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.15"
+                        app:layout_constraintStart_toEndOf="@+id/constraintGroup181"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageGate31"
+                            cornerRadius="@{@dimen/_33pxh}"
+                            imageRes="@{@drawable/img_gate31}"
+                            android:layout_width="@dimen/_147pxh"
+                            android:layout_height="@dimen/_59pxh"
+                            android:layout_marginStart="@dimen/_33pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_34pxh"
+                            android:scaleType="fitXY"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:src="@drawable/img_gate31" />
+
+                        <TextView
+                            android:id="@+id/txtGATE"
+                            style="@style/txtUbuntubold20_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_56pxh"
+                            android:layout_marginTop="@dimen/_22pxv"
+                            android:layout_marginEnd="@dimen/_3pxh"
+                            android:layout_marginBottom="@dimen/_20pxv"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@{examMaterial1VM.examMaterial1Model.txtGATE}"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageGate31"
+                            tools:text="@string/lbl_gate" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView android:id="@+id/imageImage2"
+            android:layout_height="@dimen/_264pxh"
+            android:layout_marginEnd="@dimen/_59pxh"
+            android:layout_marginStart="@dimen/_64pxh"
+            android:layout_width="@dimen/_300pxh"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/constraintGroup175"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectangle2"
+            app:layout_constraintStart_toStartOf="@+id/imageRectangle2"
+            app:layout_constraintTop_toBottomOf="@+id/imageRectangle2"
+            imageRes="@{@drawable/img_image2}" tools:src="@drawable/img_image2"/>
+        <ImageView android:id="@+id/imageRectangle2"
+            android:layout_height="0dp" android:layout_width="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle2_3"
+            app:layout_constraintBottom_toTopOf="@+id/imageImage2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.12"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectangle2"
+            app:layout_constraintStart_toStartOf="@+id/imageRectangle2" app:layout_constraintTop_toTopOf="@+id/imageRectangle2">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintGroup172"
+                android:layout_height="match_parent" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageMenu"
+                    android:layout_height="@dimen/_47pxh"
+                    android:layout_width="@dimen/_42pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_menu"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/txtMATERIALS"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtMATERIALS"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{examMaterial1VM.examMaterial1Model.txtMATERIALS}"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageMenu"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageMenu"
+                    app:layout_constraintTop_toTopOf="@+id/imageMenu"
+                    style="@style/txtUbuntubold20" tools:text="@string/lbl_materials"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

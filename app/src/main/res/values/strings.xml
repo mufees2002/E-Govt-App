@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">application3</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_city">City</string>
+<string name="lbl_exam_portal">Exam portal</string>
+<string name="lbl_jobs_portal">Jobs portal</string>
+<string name="msg_12th_mark_certi">12th Mark certificate</string>
+<string name="msg_aptitude_techn">Aptitude &amp;Technical MCQ </string>
+<string name="lbl_next">Next</string>
+<string name="lbl_no">No</string>
+<string name="msg_confirm_passwor">Confirm Password</string>
+<string name="lbl_exam_material2">Exam material2</string>
+<string name="msg_android_large">Android Large - 14</string>
+<string name="lbl_upload">Upload</string>
+<string name="msg_exam_material_v">Exam material videos</string>
+<string name="lbl_recommendations">Recommendations</string>
+<string name="lbl_exam_material1">Exam material1</string>
+<string name="lbl_about_the_exam">About the Exam</string>
+<string name="msg_union_public_se">Union Public Service Commission (UPSC) is the recruiting agency for top-level Central Government jobs.&#13;
+&#13;
+Union Public Service Commission usually recruits only for Group-A and a few Group-B level bureaucratic vacancies. Group C and Group D recruitments are conducted by other agencies/commissions.</string>
+<string name="lbl_state">State</string>
+<string name="lbl_description">   Description </string>
+<string name="lbl_login_page">Login Page</string>
+<string name="lbl_test_pattern">Test Pattern</string>
+<string name="lbl_phone_number">Phone Number</string>
+<string name="lbl_app_navigation">App Navigation</string>
+<string name="msg_name_of_the_exa">NAME OF THE EXAMS</string>
+<string name="msg_completion_of_d">Completion of Degree</string>
+<string name="lbl_yes">Yes</string>
+<string name="lbl_upload_page">Upload page</string>
+<string name="lbl_lesson_1">LESSON 1</string>
+<string name="lbl_testpattern1">testpattern1</string>
+<string name="lbl_sign_up">Sign Up</string>
+<string name="lbl_splash_screen">Splash screen</string>
+<string name="lbl_lesson_3">LESSON 3</string>
+<string name="lbl_description2">Description2</string>
+<string name="msg_name_of_the_job">NAME OF THE JOBS</string>
+<string name="lbl_lesson_2">LESSON 2</string>
+<string name="lbl_general_details2">General details</string>
+<string name="lbl_description1">Description1</string>
+<string name="lbl_name">Name</string>
+<string name="lbl_location">LOCATION</string>
+<string name="msg_preliminary_exa">Preliminary Examination
+
+Mains Examination 
+
+Interview (Personality Test)
+
+</string>
+<string name="msg_preliminary_exa2">Preliminary Examination
+
+Mains Examination 
+
+Interview (Personality Test)
+</string>
+<string name="msg_portal_for_gov">PORTAL FOR  GOVT EXAMS AND JOBS </string>
+<string name="lbl_show">Show</string>
+<string name="msg_name_of_the_ex">NAME OF THE  EXAMS</string>
+<string name="msg_12th_certificat">12th Certificate</string>
+<string name="lbl_general_details">General Details</string>
+<string name="lbl_email">Email</string>
+<string name="lbl_log_in2">Log in</string>
+<string name="lbl_aaadhar_card">Aaadhar Card</string>
+<string name="msg_degree_certific">Degree Certificate</string>
+<string name="lbl_upsc">UPSC</string>
+<string name="msg_i_would_like_to">I would like to receive your newsletter and other promotional information.</string>
+<string name="lbl_login">Login</string>
+<string name="msg_gate_graduate">GATE (Graduate Aptitude Test in Engineering) is one of the most reputed examinations in India opening so many opportunities for the candidates to grow their careers. It comprises 29 disciplines or subjects as of 2023 and candidates can go for any depending on their niche and desire</string>
+<string name="msg_recent_jobs_and">Recent Jobs and Exams</string>
+<string name="lbl_details">DETAILS</string>
+<string name="msg_forgot_your_pas">Forgot your password?</string>
+<string name="msg_continue_with_h">CONTINUE WITH HUAWEI ID</string>
+<string name="msg_document_upload">DOCUMENT UPLOADS</string>
+<string name="msg_search_job_exa">Search job, Exams, etc..</string>
+<string name="lbl_home_page">Home page</string>
+<string name="lbl_jobs">JOBS</string>
+<string name="msg_diploma_certifi">Diploma Certificate</string>
+<string name="lbl_register_page">Register Page</string>
+<string name="lbl_news">NEWS</string>
+<string name="msg_check_your_app">"Check your app's UI from the below demo screens of your app."</string>
+<string name="lbl_password">Password</string>
+<string name="lbl_gate">GATE</string>
+<string name="lbl_apply_now">Apply Now</string>
+<string name="lbl_address">Address</string>
+<string name="msg_pattern_for_the">Pattern For The Exam</string>
+<string name="lbl_exams">EXAMS</string>
+<string name="lbl_materials">MATERIALS</string>
+<string name="msg_10th_mark_certi">10th Mark certificate</string>
+<string name="lbl_upsc_exam">UPSC Exam</string>
+<string name="lbl_apply">    APPLY</string>
+<string name="msg_this_contact_has_no_phone_nu">This contact has no phone number</string>
+</resources>
