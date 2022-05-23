@@ -82,5 +82,7 @@ dependencies {
     implementation "com.airbnb.android:lottie:3.4.0"
 
     implementation 'com.vmadalin:easypermissions-ktx:0.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
 }
 
