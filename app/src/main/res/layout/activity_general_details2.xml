@@ -9,7 +9,6 @@
     <EditText
         android:id="@+id/etName6"
         style="@style/etIntermedium16"
-
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10pxh"
@@ -31,6 +30,8 @@
     <EditText
         android:id="@+id/etName4"
         style="@style/etIntermedium16"
+        android:background="@color/gray_100"
+        android:shadowColor="@color/black"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10pxh"
@@ -52,6 +53,8 @@
         android:id="@+id/etName3"
         style="@style/etIntermedium16"
         android:layout_width="0dp"
+        android:background="@color/gray_100"
+        android:shadowColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10pxh"
         android:layout_marginTop="200dp"
@@ -72,6 +75,8 @@
         android:id="@+id/etName2"
         style="@style/etIntermedium16"
         android:layout_width="0dp"
+        android:background="@color/gray_100"
+        android:shadowColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10pxh"
         android:layout_marginTop="124dp"
@@ -103,6 +108,8 @@
     <EditText android:ellipsize="end"
         android:hint="@string/lbl_name" android:id="@+id/etName"
         android:layout_height="wrap_content"
+        android:background="@color/gray_100"
+        android:shadowColor="@color/black"
         android:layout_marginEnd="@dimen/_7pxh"
         android:layout_marginStart="@dimen/_10pxh"
         android:layout_marginTop="@dimen/_43pxv"
