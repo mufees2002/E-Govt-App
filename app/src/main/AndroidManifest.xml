@@ -16,6 +16,9 @@
         android:theme="@style/Theme.MyApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".HomeScreen"
+            android:exported="false" />
+        <activity
             android:name=".DocumentsUpload"
             android:exported="false" />
         <activity
