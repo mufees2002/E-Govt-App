@@ -127,24 +127,27 @@
                         app:layout_constraintTop_toTopOf="parent"
                         cornerRadius="@{@dimen/_33pxh}"
                         imageRes="@{@drawable/img_gate31}" tools:src="@drawable/img_gate31"/>
-                    <TextView android:gravity="center"
+
+                    <TextView
                         android:id="@+id/txtApplyNow1"
+                        style="@style/txtSolidRounded_1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_24pxv"
-                        android:layout_marginEnd="@dimen/_29pxh"
                         android:layout_marginStart="@dimen/_82pxh"
                         android:layout_marginTop="@dimen/_21pxv"
-                        android:layout_width="0dp"
-                        android:paddingBottom="@dimen/_6pxv"
-                        android:paddingEnd="@dimen/_8pxh"
+                        android:layout_marginEnd="@dimen/_29pxh"
+                        android:layout_marginBottom="@dimen/_24pxv"
+                        android:gravity="center"
                         android:paddingStart="@dimen/_15pxh"
                         android:paddingTop="@dimen/_5pxv"
+                        android:paddingEnd="@dimen/_8pxh"
+                        android:paddingBottom="@dimen/_6pxv"
                         android:text="@{homePageVM.homePageModel.txtApplyNow1}"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/imageGate31"
-                        style="@style/txtSolidRounded_1" tools:text="@string/lbl_apply_now"/>
+                        tools:text="@string/lbl_apply_now" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -214,27 +217,33 @@
                 app:layout_constraintTop_toTopOf="@+id/imageUpsc12"
                 style="@style/txtUbuntubold14_1" tools:text="@string/lbl_upsc_exam"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintBackground"
+            style="@style/groupStyleblack_900"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_16pxv"
-            android:layout_width="0dp"
             app:layout_constraintBottom_toBottomOf="@+id/etSearchJobExa"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" style="@style/groupStyleblack_900">
-            <ImageView android:id="@+id/imageMenu"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageMenu"
+                android:layout_width="@dimen/_42pxh"
                 android:layout_height="@dimen/_47pxh"
-                android:layout_marginBottom="@dimen/_131pxv"
-                android:layout_marginEnd="@dimen/_378pxh"
                 android:layout_marginStart="@dimen/_10pxh"
                 android:layout_marginTop="@dimen/_8pxv"
-                android:layout_width="@dimen/_42pxh"
+                android:layout_marginEnd="@dimen/_378pxh"
+                android:layout_marginBottom="@dimen/_131pxv"
                 android:scaleType="fitXY"
                 android:src="@drawable/img_menu"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
