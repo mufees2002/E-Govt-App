@@ -114,7 +114,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_17pxh"
-                        android:layout_marginTop="@dimen/_12pxv"
                         android:layout_marginBottom="@dimen/_12pxv"
                         android:ellipsize="end"
                         android:singleLine="true"
@@ -122,8 +121,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.12"
                         app:layout_constraintStart_toEndOf="@+id/imageMenu"
-                        app:layout_constraintTop_toTopOf="@+id/imageMenu"
-                        tools:text="@string/lbl_exams" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="@string/lbl_jobs" />
 
                     <ImageView
                         android:id="@+id/imageMenu"
