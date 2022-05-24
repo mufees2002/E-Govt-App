@@ -94,4 +94,9 @@ Interview (Personality Test)
     <string name="msg_this_contact_has_no_phone_nu">This contact has no phone number</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jobsportal">JOBSPORTAL</string>
+    <string name="exams_portal">EXAMS PORTAL</string>
+    <string name="document_upload">DOCUMENT UPLOAD</string>
+    <string name="exam_materials">EXAM MATERIALS</string>
+    <string name="profile">PROFILE</string>
 </resources>
