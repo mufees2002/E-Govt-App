@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_android_large_14.xml" value="0.1" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_app_navigation.xml" value="0.1" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_description1.xml" value="0.22" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_description2.xml" value="0.22" />
@@ -10,19 +11,24 @@
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_exam_material1.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_exam_material2.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_exam_portal.xml" value="0.22" />
-        <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_exams.xml" value="0.1" />
+        <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_exams.xml" value="0.5" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_general_details.xml" value="0.12" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_general_details2.xml" value="0.12" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_home_page.xml" value="0.11571540265832682" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_home_screen.xml" value="0.1" />
+        <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_jobs.xml" value="0.1" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_jobs_portal.xml" value="0.22" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_login_page.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_login_page2.xml" value="0.36281179138321995" />
+        <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_register_page.xml" value="0.22" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_registertion_page.xml" value="0.1" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_splash_screen2.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_upload_page.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/exam.xml" value="0.1" />
+        <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/drawer_header.xml" value="0.22" />
+        <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/exam.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/fragment_exam_materials.xml" value="0.1" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/fragment_exams.xml" value="0.1" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/fragment_item_list.xml" value="0.3333333333333333" />

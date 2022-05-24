@@ -15,23 +15,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/etSearchJobExa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageMenu"
-            android:layout_width="@dimen/_42pxh"
-            android:layout_height="@dimen/_47pxh"
-            android:layout_marginStart="@dimen/_10pxh"
-            android:layout_marginTop="@dimen/_8pxv"
-            android:layout_marginEnd="@dimen/_378pxh"
-            android:layout_marginBottom="@dimen/_131pxv"
-            android:scaleType="fitXY"
-            android:src="@drawable/img_menu"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/etSearchJobExa"
