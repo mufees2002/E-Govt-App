@@ -99,4 +99,6 @@ Interview (Personality Test)
     <string name="document_upload">DOCUMENT UPLOAD</string>
     <string name="exam_materials">EXAM MATERIALS</string>
     <string name="profile">PROFILE</string>
+    <string name="open_drawer">OPEN DRAWER</string>
+    <string name="close_drawer">CLOSE DRAWER</string>
 </resources>
