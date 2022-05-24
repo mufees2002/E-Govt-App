@@ -17,12 +17,14 @@
         android:theme="@style/Theme.MyApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Jobs"
+            android:exported="false" />
+        <activity
             android:name=".Exams"
             android:exported="false" />
         <activity
             android:name=".profile"
             android:exported="false" />
-
         <activity
             android:name=".HomeScreen"
             android:exported="false" />
@@ -38,7 +40,6 @@
         <activity
             android:name=".LoginPage"
             android:exported="false" />
-
         <activity
             android:name=".Splash_Screen"
             android:exported="false" />
