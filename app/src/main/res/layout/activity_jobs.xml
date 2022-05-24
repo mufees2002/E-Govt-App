@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jobs">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintExamportal"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="93dp">
+
+        <TextView
+            android:id="@+id/txtNEWS"
+            style="@style/txtUbuntubold20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_117pxh"
+            android:layout_marginTop="@dimen/_54pxv"
+            android:layout_marginEnd="@dimen/_201pxh"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@{examPortalVM.examPortalModel.txtNEWS}"
+            app:layout_constraintEnd_toEndOf="@+id/toolbarToolbar"
+            app:layout_constraintStart_toStartOf="@+id/toolbarToolbar"
+            app:layout_constraintTop_toTopOf="@+id/toolbarToolbar"
+            tools:text="@string/lbl_news" />
+
+        <ImageView
+            android:id="@+id/imageRectangle2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle2_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_marginBottom="@dimen/_12pxv"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectangle2"
+            app:layout_constraintStart_toStartOf="@+id/imageRectangle2"
+            app:layout_constraintTop_toTopOf="@+id/imageRectangle2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintGroup109"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup124"
+                    style="@style/groupStylewhite_A700cornerRadius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.65"
+                    app:layout_constraintStart_toEndOf="@+id/constraintGroup126"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageProfileicon9"
+                        android:layout_width="@dimen/_71pxh"
+                        android:layout_height="@dimen/_47pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_profileicon9"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageProfile31"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageProfile31" />
+
+                    <ImageView
+                        android:id="@+id/imageProfile31"
+                        android:layout_width="@dimen/_71pxh"
+                        android:layout_height="@dimen/_63pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+
+                        tools:src="@drawable/img_profile31" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup126"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginEnd="@dimen/_175pxh"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/constraintGroup124"
+                    app:layout_constraintHorizontal_bias="0.06"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txtEXAMS"
+                        style="@style/txtUbuntubold20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageMenu"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.12"
+                        app:layout_constraintStart_toEndOf="@+id/imageMenu"
+                        app:layout_constraintTop_toTopOf="@+id/imageMenu"
+                        tools:text="@string/lbl_exams" />
+
+                    <ImageView
+                        android:id="@+id/imageMenu"
+                        android:layout_width="@dimen/_42pxh"
+                        android:layout_height="@dimen/_47pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_menu"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtEXAMS"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

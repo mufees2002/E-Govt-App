@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintBackground"
+        style="@style/groupStyleblack_900"
+        android:layout_width="420dp"
+        android:layout_height="215dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="158dp"
+            android:src="@drawable/img_profile31"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="323dp"
+        android:layout_height="72dp"
+        android:background="@drawable/border"
+        android:border="@color/black"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <TextView
+        android:layout_width="168dp"
+        android:layout_height="71dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/black"
+        android:text="Applied Exams"
+        android:textColor="@color/white"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="141dp"
+        android:layout_height="69dp"
+
+        android:background="@drawable/border"
+        android:backgroundTint="@color/white"
+        android:text="Appiled Exams"
+        android:textColor="@color/black"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="421dp"
+        android:layout_height="291dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="434dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
