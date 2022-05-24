@@ -142,17 +142,17 @@
         </androidx.appcompat.widget.Toolbar>
 
         <androidx.recyclerview.widget.RecyclerView
+            itemSpace="@{@dimen/_16pxh}"
             android:layout_width="411dp"
             android:layout_height="641dp"
-            tools:layout_editor_absoluteX="0dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:layout_editor_absoluteY="95dp"
-            tools:ignore="MissingConstraints"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            itemSpace="@{@dimen/_16pxh}" tools:itemCount="1" tools:listitem="@layout/exam"
-            />
+            tools:ignore="MissingConstraints"
+            tools:itemCount="1"
+            tools:listitem="@layout/exam" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
