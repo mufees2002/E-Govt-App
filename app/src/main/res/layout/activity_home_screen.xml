@@ -71,6 +71,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             style="@style/txtUbuntubold14_1" tools:text="@string/lbl_recommendations"/>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintGroup158"
             android:layout_height="wrap_content"
@@ -78,91 +79,27 @@
             android:layout_marginTop="@dimen/_4pxv"
             android:layout_width="0dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtRecommendations">
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintGroup167"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_10pxh"
-                android:layout_marginStart="@dimen/_37pxh"
-                android:layout_width="0dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/constraintGroup166"
-                app:layout_constraintTop_toTopOf="parent" style="@style/groupStylewhite_4">
-                <ImageView android:id="@+id/imageUpsc11"
-                    android:layout_height="@dimen/_73pxh"
-                    android:layout_marginEnd="@dimen/_61pxh"
-                    android:layout_marginStart="@dimen/_36pxh"
-                    android:layout_marginTop="@dimen/_17pxv"
-                    android:layout_width="@dimen/_79pxh"
-                    android:scaleType="fitXY"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                     tools:src="@drawable/img_upsc11"/>
-                <TextView android:gravity="center"
-                    android:id="@+id/txtApplyNow"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_20pxv"
-                    android:layout_marginEnd="@dimen/_35pxh"
-                    android:layout_marginStart="@dimen/_76pxh"
-                    android:layout_marginTop="@dimen/_11pxv"
-                    android:layout_width="0dp"
-                    android:paddingBottom="@dimen/_6pxv"
-                    android:paddingEnd="@dimen/_11pxh"
-                    android:paddingStart="@dimen/_12pxh"
-                    android:paddingTop="@dimen/_5pxv"
-                    android:text="@{homePageVM.homePageModel.txtApplyNow}"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageUpsc11"
-                    style="@style/txtSolidRounded_1" tools:text="@string/lbl_apply_now" android:textSize="10dp"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintGroup166"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_31pxh"
-                android:layout_width="0dp"
-                app:layout_constraintEnd_toStartOf="@+id/constraintGroup167"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" style="@style/groupStylewhite_4">
-                <ImageView android:id="@+id/imageGate31"
-                    android:layout_height="@dimen/_59pxh"
-                    android:layout_marginEnd="@dimen/_15pxh"
-                    android:layout_marginStart="@dimen/_14pxh"
-                    android:layout_marginTop="@dimen/_17pxv"
-                    android:layout_width="@dimen/_147pxh"
-                    android:scaleType="fitXY"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-
-               tools:src="@drawable/img_gate31"/>
-
-                <TextView
-                    android:id="@+id/txtApplyNow1"
-                    style="@style/txtSolidRounded_1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_82pxh"
-                    android:layout_marginTop="@dimen/_21pxv"
-                    android:layout_marginEnd="@dimen/_29pxh"
-                    android:layout_marginBottom="@dimen/_24pxv"
-                    android:gravity="center"
-                    android:paddingStart="@dimen/_15pxh"
-                    android:paddingTop="@dimen/_5pxv"
-                    android:paddingEnd="@dimen/_8pxh"
-                    android:paddingBottom="@dimen/_6pxv"
-                    android:text="@{homePageVM.homePageModel.txtApplyNow1}"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageGate31"
-                    tools:text="@string/lbl_apply_now" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtRecommendations"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="409dp"
+        android:layout_height="133dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="350dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="355dp"
+            android:layout_height="137dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="350dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </HorizontalScrollView>
     <TextView
         android:id="@+id/recent"
         style="@style/txtUbuntubold14_1"
