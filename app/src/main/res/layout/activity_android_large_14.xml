@@ -14,6 +14,7 @@
             android:src="@drawable/img_rectangle2"
             app:layout_constraintBottom_toTopOf="@+id/imageUpsc11"
             app:layout_constraintEnd_toEndOf="parent"
+
             app:layout_constraintHeight_percent="0.12"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -133,20 +134,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintGroup244"
             style="@style/txtUbuntubold20_1" tools:text="@string/msg_pattern_for_the"/>
-        <TextView android:id="@+id/txtPreliminaryExa"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_11pxv"
-            android:layout_marginEnd="@dimen/_9pxh"
-            android:layout_marginStart="@dimen/_31pxh"
-            android:layout_marginTop="@dimen/_45pxv"
+
+        <TextView
+            android:id="@+id/txtPreliminaryExa"
+            style="@style/txtUbuntubold20_1"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_45pxv"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginLeft="20dp"
+
             android:text="@{androidLarge14VM.androidLarge14Model.txtPreliminaryExa}"
             app:layout_constraintBottom_toBottomOf="@+id/txtAPPLY"
-            app:layout_constraintEnd_toEndOf="@+id/imageRectangle242"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.07"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtPatternForThe"
-            style="@style/txtUbuntubold20_1" tools:text="@string/msg_preliminary_exa"/>
+            app:layout_constraintVertical_bias="0.47"
+            tools:text="@string/msg_preliminary_exa" />
+
         <ImageView android:id="@+id/imageRectangle242"
             android:layout_height="@dimen/_44pxh"
             android:layout_marginBottom="@dimen/_56pxv"
