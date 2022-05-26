@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="testpattern1VM" type="com.application.app.modules.testpattern1.data.viewmodel.Testpattern1VM"/>
-    </data>
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComExam">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintTestpattern1"
         android:layout_height="match_parent"
@@ -70,7 +71,7 @@
                 app:layout_constraintHorizontal_bias="0.56"
                 app:layout_constraintStart_toEndOf="@+id/constraintGroup242"
                 app:layout_constraintTop_toTopOf="parent"
-                circular="@{true}" imageRes="@{@drawable/img_profile31}" tools:src="@drawable/img_profile31"/>
+                tools:src="@drawable/img_profile31"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
         <ImageView android:id="@+id/imageMenu1"
             android:layout_height="@dimen/_47pxh"
@@ -94,8 +95,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageMenu1"
-            cornerRadius="@{@dimen/_33pxh}"
-            imageRes="@{@drawable/img_gate33}" tools:src="@drawable/img_gate33"/>
+            tools:src="@drawable/img_gate33"/>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintGroup225"
             android:layout_height="wrap_content"
@@ -154,46 +154,64 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintGroup225"
             style="@style/txtUbuntubold20_1" tools:text="@string/lbl_about_the_exam"/>
-        <TextView android:gravity="start"
+
+        <TextView
             android:id="@+id/txtGATEGraduate"
+            style="@style/txtUbuntubold15_1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_44pxv"
-            android:layout_marginEnd="@dimen/_23pxh"
             android:layout_marginStart="@dimen/_44pxh"
             android:layout_marginTop="@dimen/_17pxv"
-            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginBottom="@dimen/_44pxv"
+            android:gravity="start"
             android:text="@{testpattern1VM.testpattern1Model.txtGATEGraduate}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtAboutTheExam"
-            style="@style/txtUbuntubold15_1" tools:text="@string/msg_gate_graduate"/>
-        <ImageView android:id="@+id/imageRectangle242"
-            android:layout_height="@dimen/_44pxh"
-            android:layout_marginBottom="@dimen/_44pxv"
-            android:layout_marginEnd="@dimen/_98pxh"
+            app:layout_constraintVertical_bias="0.326"
+            tools:text="@string/msg_gate_graduate" />
+
+        <ImageView
+            android:id="@+id/imageRectangle242"
+            android:layout_width="157dp"
+            android:layout_height="58dp"
             android:layout_marginStart="@dimen/_58pxh"
             android:layout_marginTop="@dimen/_141pxv"
-            android:layout_width="@dimen/_200pxh"
+            android:layout_marginEnd="@dimen/_98pxh"
+            android:layout_marginBottom="@dimen/_44pxv"
             android:scaleType="fitXY"
             android:src="@drawable/img_rectangle242_2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/txtGATEGraduate"
-            app:layout_constraintHorizontal_bias="0.24"
-            app:layout_constraintStart_toStartOf="@+id/txtGATEGraduate" app:layout_constraintTop_toTopOf="@+id/txtGATEGraduate"/>
-        <TextView android:ellipsize="end" android:gravity="start"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="@+id/txtGATEGraduate"
+            app:layout_constraintTop_toTopOf="@+id/txtGATEGraduate"
+            app:layout_constraintVertical_bias="0.477" />
+
+        <TextView
             android:id="@+id/txtAPPLY"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_11pxv"
-            android:layout_marginEnd="@dimen/_69pxh"
+            style="@style/txtUbuntubold20"
+            android:layout_width="78dp"
+            android:layout_height="23dp"
             android:layout_marginStart="@dimen/_49pxh"
             android:layout_marginTop="@dimen/_10pxv"
-            android:layout_width="0dp" android:singleLine="true"
+            android:layout_marginEnd="@dimen/_69pxh"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
             android:text="@{testpattern1VM.testpattern1Model.txtAPPLY}"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="@+id/txtGATEGraduate"
             app:layout_constraintEnd_toEndOf="@+id/imageRectangle242"
+            app:layout_constraintHorizontal_bias="0.153"
             app:layout_constraintStart_toStartOf="@+id/imageRectangle242"
             app:layout_constraintTop_toTopOf="@+id/imageRectangle242"
-            style="@style/txtUbuntubold20" tools:text="@string/lbl_apply"/>
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="@string/lbl_apply" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="description1VM" type="com.application.app.modules.description1.data.viewmodel.Description1VM"/>
-    </data>
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComExamPattern">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintDescription1"
         android:layout_height="match_parent"
@@ -36,7 +37,7 @@
                 app:layout_constraintHorizontal_bias="0.54"
                 app:layout_constraintStart_toEndOf="@+id/constraintGroup211"
                 app:layout_constraintTop_toTopOf="parent"
-                circular="@{true}" imageRes="@{@drawable/img_profile31}" tools:src="@drawable/img_profile31"/>
+                 tools:src="@drawable/img_profile31"/>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintGroup211"
                 android:layout_height="wrap_content"
@@ -83,8 +84,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageRectangle2"
-            cornerRadius="@{@dimen/_33pxh}"
-            imageRes="@{@drawable/img_gate33}" tools:src="@drawable/img_gate33"/>
+            tools:src="@drawable/img_gate33"/>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintGroup200"
             android:layout_height="wrap_content"
@@ -149,32 +149,41 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtPatternForThe"
             style="@style/txtUbuntubold15" tools:text="@string/msg_aptitude_techn"/>
-        <ImageView android:id="@+id/imageRectangle242"
-            android:layout_height="@dimen/_44pxh"
-            android:layout_marginBottom="@dimen/_71pxv"
-            android:layout_marginEnd="@dimen/_33pxh"
+
+        <ImageView
+            android:id="@+id/imageRectangle242"
+            android:layout_width="175dp"
+            android:layout_height="65dp"
             android:layout_marginStart="@dimen/_36pxh"
             android:layout_marginTop="@dimen/_122pxv"
-            android:layout_width="@dimen/_200pxh"
+            android:layout_marginEnd="@dimen/_33pxh"
+            android:layout_marginBottom="@dimen/_71pxv"
             android:scaleType="fitXY"
             android:src="@drawable/img_rectangle242"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/txtAptitudeTechn"
-            app:layout_constraintHorizontal_bias="0.23"
-            app:layout_constraintStart_toStartOf="@+id/txtAptitudeTechn" app:layout_constraintTop_toTopOf="@+id/txtAptitudeTechn"/>
-        <TextView android:ellipsize="end" android:gravity="start"
+            app:layout_constraintHorizontal_bias="0.229"
+            app:layout_constraintStart_toStartOf="@+id/txtAptitudeTechn"
+            app:layout_constraintTop_toTopOf="@+id/txtAptitudeTechn"
+            app:layout_constraintVertical_bias="0.542" />
+
+        <TextView
             android:id="@+id/txtAPPLY"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_11pxv"
-            android:layout_marginEnd="@dimen/_64pxh"
+            style="@style/txtUbuntubold20"
+            android:layout_width="73dp"
+            android:layout_height="35dp"
             android:layout_marginStart="@dimen/_54pxh"
             android:layout_marginTop="@dimen/_10pxv"
-            android:layout_width="0dp" android:singleLine="true"
-            android:text="@{description1VM.description1Model.txtAPPLY}"
+            android:layout_marginEnd="@dimen/_64pxh"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
             app:layout_constraintBottom_toBottomOf="@+id/imageRectangle242"
             app:layout_constraintEnd_toEndOf="@+id/imageRectangle242"
             app:layout_constraintStart_toStartOf="@+id/imageRectangle242"
             app:layout_constraintTop_toTopOf="@+id/imageRectangle242"
-            style="@style/txtUbuntubold20" tools:text="@string/lbl_apply"/>
+            tools:text="@string/lbl_apply" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

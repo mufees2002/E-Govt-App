@@ -17,6 +17,24 @@
         android:theme="@style/Theme.MyApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Exammat2"
+            android:exported="false" />
+        <activity
+            android:name=".Exammat1"
+            android:exported="false" />
+        <activity
+            android:name=".ComExamPattern"
+            android:exported="false" />
+        <activity
+            android:name=".ComExam"
+            android:exported="false" />
+
+        <activity
+            android:name=".ExamDescripiton"
+            android:exported="false" />
+
+
+        <activity
             android:name=".ExamTestPattern"
             android:exported="false" />
         <activity

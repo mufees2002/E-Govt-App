@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exammat1">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintExammaterial1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup175"
+            style="@style/groupStylewhite_2"
+            android:layout_width="392dp"
+            android:layout_height="233dp"
+            android:layout_marginTop="@dimen/_43pxv"
+            android:layout_marginBottom="@dimen/_124pxv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageImage2">
+
+
+            <TextView
+                android:id="@+id/txtExamMaterialV"
+                style="@style/txtUbuntubold20_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_27pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:singleLine="true"
+                android:text="@{examMaterial1VM.examMaterial1Model.txtExamMaterialV}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/msg_exam_material_v" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollGroup183"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_marginEnd="@dimen/_182pxh"
+                android:layout_marginBottom="@dimen/_26pxv"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtExamMaterialV"
+                app:layout_constraintVertical_bias="1.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup174"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                itemSpace="@{@dimen/_16pxh}"
+                android:layout_width="281dp"
+                android:layout_height="162dp"
+                android:layout_marginBottom="16dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.302"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:itemCount="1"
+                tools:listitem="@layout/material" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageImage2"
+            android:layout_width="@dimen/_300pxh"
+            android:layout_height="@dimen/_264pxh"
+            android:layout_marginStart="@dimen/_64pxh"
+            android:layout_marginEnd="@dimen/_59pxh"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/constraintGroup175"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectangle2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageRectangle2"
+            app:layout_constraintTop_toBottomOf="@+id/imageRectangle2"
+            tools:src="@drawable/img_image2" />
+
+        <ImageView
+            android:id="@+id/imageRectangle2"
+            android:layout_width="443dp"
+            android:layout_height="102dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle2_3"
+            app:layout_constraintBottom_toTopOf="@+id/imageImage2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_width="418dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="@dimen/_25pxv"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectangle2"
+            app:layout_constraintStart_toStartOf="@+id/imageRectangle2"
+            app:layout_constraintTop_toTopOf="@+id/imageRectangle2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintGroup172"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageMenu"
+                    android:layout_width="39dp"
+                    android:layout_height="48dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_menu"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/txtMATERIALS"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtMATERIALS"
+                    style="@style/txtUbuntubold20"
+                    android:layout_width="324dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text="@{examMaterial1VM.examMaterial1Model.txtMATERIALS}"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageMenu"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageMenu"
+                    app:layout_constraintTop_toTopOf="@+id/imageMenu"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:text="@string/lbl_materials" />
+
+                <ImageView
+                    android:id="@+id/imageProfile31"
+                    android:layout_width="67dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="36dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.38"
+                    tools:src="@drawable/img_profile31" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
