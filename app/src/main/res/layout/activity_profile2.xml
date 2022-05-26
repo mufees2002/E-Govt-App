@@ -24,6 +24,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <TextView
         android:layout_width="323dp"
         android:layout_height="72dp"
@@ -32,19 +33,19 @@
 
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="286dp" />
+        tools:layout_editor_absoluteY="285dp" />
 
     <TextView
         android:layout_width="168dp"
         android:layout_height="71dp"
         android:background="@drawable/border"
         android:backgroundTint="@color/black"
+        android:gravity="center"
         android:text="Applied Exams"
         android:textColor="@color/white"
-        android:gravity="center"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="288dp" />
+        tools:layout_editor_absoluteY="286dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -61,11 +62,17 @@
         tools:layout_editor_absoluteY="288dp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="421dp"
-        android:layout_height="291dp"
+        itemSpace="@{@dimen/_16pxh}"
+        android:layout_width="413dp"
+        android:layout_height="331dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="434dp">
+        tools:itemCount="1"
+        tools:listitem="@layout/exam">
 
     </androidx.recyclerview.widget.RecyclerView>
 

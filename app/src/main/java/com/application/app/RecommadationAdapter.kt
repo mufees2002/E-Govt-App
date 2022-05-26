@@ -12,11 +12,13 @@ class RecommadationAdapter(private val n:List<RecommadationModal>):RecyclerView.
     class ViewHolder(Recommadation: View):RecyclerView.ViewHolder(Recommadation){
         val image:ImageView=Recommadation.findViewById(R.id.imageUpsc11);
         val text:TextView=Recommadation.findViewById(R.id.txtApplyNow);
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         TODO("Not yet implemented")
         val view=LayoutInflater.from(parent.context).inflate(R.layout.recommendations,parent,false);
+
         return  ViewHolder(view);
     }
 
@@ -25,6 +27,13 @@ class RecommadationAdapter(private val n:List<RecommadationModal>):RecyclerView.
         val item=n[position];
         holder.image.setImageResource(item.image);
         holder.text.text=item.name
+        holder.image.setOnClickListener(View.OnClickListener {
+
+
+
+        })
+
+        
     }
 
     override fun getItemCount(): Int {
