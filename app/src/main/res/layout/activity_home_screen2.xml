@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintHomepage"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintBackground"
+        style="@style/groupStyleblack_900"
+        android:layout_width="412dp"
+        android:layout_height="236dp"
+        android:layout_marginBottom="@dimen/_16pxv"
+        app:layout_constraintBottom_toBottomOf="@+id/etSearchJobExa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etSearchJobExa"
+        style="@style/etSolidRoundedOutline"
+        android:layout_width="347dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="@dimen/_43pxh"
+        android:layout_marginTop="@dimen/_200pxh"
+        android:layout_marginEnd="@dimen/_60pxh"
+        android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_13"
+        android:drawableStart="@drawable/img_iconly_broken_search"
+        android:drawablePadding="@dimen/_10pxh"
+        android:ellipsize="end"
+        android:hint="@string/msg_search_job_exa"
+        android:paddingStart="@dimen/_16pxh"
+        android:paddingTop="@dimen/_17pxv"
+        android:paddingBottom="@dimen/_17pxv"
+        android:singleLine="true"
+        android:textColorHint="@color/gray_900_8c"
+        app:layout_constraintEnd_toEndOf="@+id/constraintBackground"
+        app:layout_constraintStart_toStartOf="@+id/constraintBackground"
+        app:layout_constraintTop_toTopOf="@+id/constraintBackground" />
+    <View
+        android:id="@+id/viewFrame11"
+        android:layout_height="@dimen/_24pxv"
+        android:layout_marginBottom="@dimen/_16pxv"
+        android:layout_marginEnd="@dimen/_126pxh"
+        android:layout_marginStart="@dimen/_16pxh"
+        android:layout_marginTop="@dimen/_16pxv"
+        android:layout_width="@dimen/_185pxh"
+        app:layout_constraintBottom_toBottomOf="@+id/etSearchJobExa"
+        app:layout_constraintEnd_toEndOf="@+id/etSearchJobExa"
+        app:layout_constraintStart_toStartOf="@+id/etSearchJobExa" app:layout_constraintTop_toTopOf="@+id/etSearchJobExa"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup159"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40pxv"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSearchJobExa" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtRecommendations"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:textSize="20dp"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@string/lbl_recommendations"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/txtUbuntubold14_1" tools:text="@string/lbl_recommendations"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup158"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtRecommendations"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="409dp"
+        android:layout_height="133dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="350dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="355dp"
+            android:layout_height="137dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="350dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/recent"
+        style="@style/txtUbuntubold14_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24pxh"
+        android:layout_marginTop="508dp"
+        android:layout_marginEnd="@dimen/_24pxh"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:singleLine="true"
+        android:text="Recent Jobs and Exams"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="309dp"
+        android:layout_height="127dp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="559dp"
+        tools:ignore="MissingConstraints">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
