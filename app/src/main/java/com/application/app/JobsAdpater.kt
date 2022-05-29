@@ -14,8 +14,8 @@ class JobsAdpater(private val n:List<JobsModule>,private val listener:OnItemClic
    inner class ViewHolder(JobsModuleView: View):RecyclerView.ViewHolder(JobsModuleView),
        View.OnClickListener {
      val image:ImageView=JobsModuleView.findViewById(R.id.viewRectangle243);
-     val name:TextView=JobsModuleView.findViewById(R.id.txtNAMEOFTHEJOB);
-     val location:TextView=JobsModuleView.findViewById(R.id.txtLOCATION);
+     val name:TextView=JobsModuleView.findViewById(R.id.txtNAMEOFTHEEX);
+     val location:TextView=JobsModuleView.findViewById(R.id.txtNAMEOFTHEEX1);
         init {
            itemView.setOnClickListener(this);
         }

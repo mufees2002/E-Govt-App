@@ -46,7 +46,7 @@
                 android:layout_marginStart="@dimen/_31pxh"
                 android:layout_marginTop="@dimen/_12pxv"
                 android:layout_width="0dp" android:singleLine="true"
-                android:text="@{uploadPageVM.uploadPageModel.txtDOCUMENTUPLOAD}"
+                android:text="@string/document_upload"
                 app:layout_constraintBottom_toBottomOf="@+id/imageMenu"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageMenu"
@@ -56,14 +56,90 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup144"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintGroup140">
+
+        <ImageView
+            android:id="@+id/imageScaleOption"
+            android:layout_width="@dimen/_16pxh"
+            android:layout_height="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_58pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_170pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_scaleoption"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageScaleOption1"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageScaleOption1" />
+
+        <TextView
+            android:id="@+id/txt12thCertificat"
+            style="@style/txtInterregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_58pxh"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_marginEnd="@dimen/_66pxh"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/msg_12th_certificat"
+            app:layout_constraintEnd_toStartOf="@+id/txtDiplomaCertifi"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/msg_12th_certificat" />
+
+        <ImageView
+            android:id="@+id/imageScaleOption1"
+            android:layout_width="@dimen/_16pxh"
+            android:layout_height="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_marginEnd="@dimen/_154pxh"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_scaleoption_1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageScaleOption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toEndOf="@+id/imageScaleOption"
+            app:layout_constraintTop_toBottomOf="@+id/txt12thCertificat" />
+
+        <TextView
+            android:id="@+id/txtDiplomaCertifi"
+            style="@style/txtInterregular12_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_60pxh"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/msg_diploma_certifi"
+            app:layout_constraintBottom_toBottomOf="@+id/txt12thCertificat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toEndOf="@+id/txt12thCertificat"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/msg_diploma_certifi" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintGroup140"
         style="@style/groupStylewhite_3"
-        android:layout_width="370dp"
-        android:layout_height="90dp"
+        android:layout_width="353dp"
+        android:layout_height="97dp"
         android:layout_marginStart="@dimen/_33pxh"
-        android:layout_marginTop="@dimen/_16pxv"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="@dimen/_20pxh"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageRectangle2">
 
@@ -100,7 +176,7 @@
             android:layout_marginBottom="@dimen/_13pxv"
             android:ellipsize="end"
             android:singleLine="true"
-            android:text="@{uploadPageVM.uploadPageModel.txt10thMarkCerti}"
+            android:text="@string/msg_10th_mark_certi"
             app:layout_constraintBottom_toBottomOf="@+id/btnUpload"
             app:layout_constraintEnd_toStartOf="@+id/btnUpload"
             app:layout_constraintHorizontal_bias="0.06"
@@ -110,90 +186,15 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintGroup144"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintGroup140">
-
-        <ImageView
-            android:id="@+id/imageScaleOption"
-            android:layout_width="@dimen/_16pxh"
-            android:layout_height="@dimen/_16pxh"
-            android:layout_marginStart="@dimen/_58pxh"
-            android:layout_marginTop="@dimen/_1pxv"
-            android:layout_marginEnd="@dimen/_170pxh"
-            android:scaleType="fitXY"
-            android:src="@drawable/img_scaleoption"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageScaleOption1"
-            app:layout_constraintHorizontal_bias="0.14"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageScaleOption1" />
-
-        <TextView
-            android:id="@+id/txt12thCertificat"
-            style="@style/txtInterregular12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_58pxh"
-            android:layout_marginTop="@dimen/_2pxv"
-            android:layout_marginEnd="@dimen/_66pxh"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:text="@{uploadPageVM.uploadPageModel.txt12thCertificat}"
-            app:layout_constraintEnd_toStartOf="@+id/txtDiplomaCertifi"
-            app:layout_constraintHorizontal_bias="0.14"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/msg_12th_certificat" />
-
-        <ImageView
-            android:id="@+id/imageScaleOption1"
-            android:layout_width="@dimen/_16pxh"
-            android:layout_height="@dimen/_16pxh"
-            android:layout_marginTop="@dimen/_6pxv"
-            android:layout_marginEnd="@dimen/_154pxh"
-            android:layout_marginBottom="@dimen/_1pxv"
-            android:scaleType="fitXY"
-            android:src="@drawable/img_scaleoption_1"
-            app:layout_constraintBottom_toBottomOf="@+id/imageScaleOption"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
-            app:layout_constraintStart_toEndOf="@+id/imageScaleOption"
-            app:layout_constraintTop_toBottomOf="@+id/txt12thCertificat" />
-
-        <TextView
-            android:id="@+id/txtDiplomaCertifi"
-            style="@style/txtInterregular12_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_60pxh"
-            android:layout_marginBottom="@dimen/_1pxv"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:text="@{uploadPageVM.uploadPageModel.txtDiplomaCertifi}"
-            app:layout_constraintBottom_toBottomOf="@+id/txt12thCertificat"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.3"
-            app:layout_constraintStart_toEndOf="@+id/txt12thCertificat"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/msg_diploma_certifi" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintGroup141"
         style="@style/groupStylewhite_3"
-        android:layout_width="368dp"
-        android:layout_height="96dp"
+        android:layout_width="351dp"
+        android:layout_height="92dp"
         android:layout_marginStart="@dimen/_27pxh"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/_26pxh"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintGroup144">
 
@@ -208,7 +209,7 @@
             android:layout_marginBottom="@dimen/_13pxv"
             android:ellipsize="end"
             android:singleLine="true"
-            android:text="@{uploadPageVM.uploadPageModel.txt12thMarkCerti}"
+            android:text="@string/msg_12th_certificat"
             app:layout_constraintBottom_toBottomOf="@+id/btnUpload1"
             app:layout_constraintEnd_toStartOf="@+id/btnUpload1"
             app:layout_constraintHorizontal_bias="0.07"
@@ -238,6 +239,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/lbl_upload" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <TextView android:ellipsize="end" android:gravity="start"
         android:id="@+id/txtCompletionOfD"
         android:layout_height="wrap_content"
@@ -245,7 +247,7 @@
         android:layout_marginStart="@dimen/_41pxh"
         android:layout_marginTop="@dimen/_34pxv"
         android:layout_width="0dp" android:singleLine="true"
-        android:text="@{uploadPageVM.uploadPageModel.txtCompletionOfD}"
+        android:text="@string/msg_completion_of_d"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintGroup141"
@@ -257,94 +259,113 @@
         android:layout_width="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtCompletionOfD">
-        <ImageView android:id="@+id/imageScaleOption2"
+
+        <ImageView
+            android:id="@+id/imageScaleOption2"
+            android:layout_width="@dimen/_16pxh"
             android:layout_height="@dimen/_16pxh"
-            android:layout_marginEnd="@dimen/_192pxh"
             android:layout_marginStart="@dimen/_66pxh"
             android:layout_marginTop="@dimen/_3pxv"
-            android:layout_width="@dimen/_16pxh"
+            android:layout_marginEnd="@dimen/_192pxh"
             android:scaleType="fitXY"
             android:src="@drawable/img_scaleoption"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageScaleOption3"
             app:layout_constraintHorizontal_bias="0.16"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@+id/imageScaleOption3"/>
-        <TextView android:ellipsize="end" android:id="@+id/txtYes"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_88pxh"
-            android:layout_marginStart="@dimen/_66pxh"
-            android:layout_marginTop="@dimen/_4pxv"
-            android:layout_width="wrap_content"
-            android:singleLine="true"
-            android:text="@{uploadPageVM.uploadPageModel.txtYes}"
-            app:layout_constraintEnd_toStartOf="@+id/txtNo"
-            app:layout_constraintHorizontal_bias="0.16"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            style="@style/txtInterregular12" tools:text="@string/lbl_yes"/>
-        <ImageView android:id="@+id/imageScaleOption3"
-            android:layout_height="@dimen/_16pxh"
-            android:layout_marginBottom="@dimen/_3pxv"
-            android:layout_marginEnd="@dimen/_124pxh"
-            android:layout_marginTop="@dimen/_4pxv"
+            app:layout_constraintTop_toTopOf="@+id/imageScaleOption3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtYes"
+            style="@style/txtInterregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="328dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/lbl_yes"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="43dp"
+            tools:text="@string/lbl_yes"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageScaleOption3"
             android:layout_width="@dimen/_16pxh"
+            android:layout_height="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_marginEnd="@dimen/_124pxh"
+            android:layout_marginBottom="@dimen/_3pxv"
             android:scaleType="fitXY"
             android:src="@drawable/img_scaleoption_1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.59"
-            app:layout_constraintStart_toEndOf="@+id/imageScaleOption2" app:layout_constraintTop_toBottomOf="@+id/txtYes"/>
-        <TextView android:ellipsize="end" android:id="@+id/txtNo"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_3pxv"
-            android:layout_marginEnd="@dimen/_123pxh"
+            app:layout_constraintStart_toEndOf="@+id/imageScaleOption2"
+            app:layout_constraintTop_toBottomOf="@+id/txtYes"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txtNo"
+            style="@style/txtInterregular12_1"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="124dp"
+            android:ellipsize="end"
             android:singleLine="true"
-            android:text="@{uploadPageVM.uploadPageModel.txtNo}"
-            app:layout_constraintBottom_toBottomOf="@+id/txtYes"
+            android:text="@string/lbl_no"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.4"
-            app:layout_constraintStart_toEndOf="@+id/txtYes"
-            app:layout_constraintTop_toTopOf="parent"
-            style="@style/txtInterregular12_1" tools:text="@string/lbl_no"/>
+            tools:layout_editor_absoluteY="43dp"
+            tools:text="@string/lbl_no"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintGroup154"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_26pxh"
-        android:layout_marginStart="@dimen/_27pxh"
-        android:layout_marginTop="@dimen/_22pxv"
+        style="@style/groupStylewhite_3"
         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_27pxh"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="@dimen/_26pxh"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintGroup145" style="@style/groupStylewhite_3">
-        <TextView android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@+id/constraintGroup145">
+
+        <TextView
             android:id="@+id/txtDegreeCertific"
+            style="@style/txtUbuntubold20_1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_17pxv"
             android:layout_marginStart="@dimen/_31pxh"
             android:layout_marginTop="@dimen/_10pxv"
-            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:ellipsize="end"
             android:singleLine="true"
-            android:text="@{uploadPageVM.uploadPageModel.txtDegreeCertific}"
+            android:text="@string/msg_degree_certific"
             app:layout_constraintBottom_toBottomOf="@+id/btnUpload2"
             app:layout_constraintEnd_toStartOf="@+id/btnUpload2"
             app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btnUpload2"
-            style="@style/txtUbuntubold20_1" tools:text="@string/msg_degree_certific"/>
+            tools:text="@string/msg_degree_certific" />
+
         <androidx.appcompat.widget.AppCompatButton
-            android:ellipsize="end" android:gravity="center"
             android:id="@+id/btnUpload2"
-            android:layout_height="@dimen/_45pxv"
-            android:layout_marginBottom="@dimen/_17pxv"
-            android:layout_marginEnd="@dimen/_5pxh"
-            android:layout_marginTop="@dimen/_23pxv"
+            style="@style/btnSolidRounded_1"
             android:layout_width="@dimen/_119pxh"
-            android:paddingBottom="@dimen/_13pxv"
-            android:paddingEnd="@dimen/_30pxh"
+            android:layout_height="@dimen/_45pxv"
+            android:layout_marginTop="@dimen/_23pxv"
+            android:layout_marginEnd="@dimen/_5pxh"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:ellipsize="end"
+            android:gravity="center"
             android:paddingStart="@dimen/_30pxh"
             android:paddingTop="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_13pxv"
             android:singleLine="true"
             android:text="@string/lbl_upload"
             android:textAllCaps="false"
@@ -352,9 +373,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/txtDegreeCertific"
             app:layout_constraintTop_toTopOf="parent"
-            style="@style/btnSolidRounded_1" tools:text="@string/lbl_upload"/>
+            tools:text="@string/lbl_upload" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintGroup156"
         android:layout_height="wrap_content"
@@ -376,7 +398,7 @@
             android:layout_marginTop="@dimen/_13pxv"
             android:layout_width="wrap_content"
             android:singleLine="true"
-            android:text="@{uploadPageVM.uploadPageModel.txtAaadharCard}"
+            android:text="@string/lbl_aaadhar_card"
             app:layout_constraintBottom_toBottomOf="@+id/btnUpload3"
             app:layout_constraintEnd_toEndOf="@+id/btnUpload3"
             app:layout_constraintHorizontal_bias="0.09"

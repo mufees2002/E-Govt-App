@@ -4,16 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".profile">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintBackground"
         style="@style/groupStyleblack_900"
-        android:layout_width="420dp"
-        android:layout_height="215dp"
+        android:layout_width="410dp"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:layout_width="225dp"
@@ -23,45 +27,57 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:layout_width="323dp"
-        android:layout_height="72dp"
-        android:background="@drawable/border"
-        android:border="@color/black"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="319dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintBackground"
+        app:layout_constraintVertical_bias="0.189"
+        tools:ignore="MissingConstraints">
 
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="285dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="142dp"
+            android:layout_height="71dp"
 
-    <TextView
-        android:layout_width="168dp"
-        android:layout_height="71dp"
-        android:background="@drawable/border"
-        android:backgroundTint="@color/black"
-        android:gravity="center"
-        android:text="Applied Exams"
-        android:textColor="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="286dp" />
+            android:background="@drawable/border"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/lbl_appiledex"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.545" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="141dp"
-        android:layout_height="69dp"
-
-        android:background="@drawable/border"
-        android:backgroundTint="@color/white"
-        android:text="Appiled Exams"
-        android:textColor="@color/black"
-        android:gravity="center"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="288dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="168dp"
+            android:layout_height="71dp"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/lbl_appliedjob"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.033"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         itemSpace="@{@dimen/_16pxh}"
         android:layout_width="413dp"
         android:layout_height="331dp"
@@ -70,10 +86,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintBackground"
+        app:layout_constraintVertical_bias="0.913"
         tools:ignore="MissingConstraints"
         tools:itemCount="1"
         tools:listitem="@layout/exam">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

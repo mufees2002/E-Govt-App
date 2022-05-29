@@ -24,8 +24,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintGroup167"
                 style="@style/groupStylewhite_4"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="162dp"
+                android:layout_height="143dp"
                 android:layout_marginEnd="196dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -61,8 +61,10 @@
                     android:textSize="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageUpsc11"
+                    app:layout_constraintVertical_bias="0.0"
                     tools:text="@string/lbl_apply_now" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

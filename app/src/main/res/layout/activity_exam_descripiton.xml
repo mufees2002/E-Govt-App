@@ -9,14 +9,17 @@
         android:id="@+id/constraintDescription2"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStylewhite_A700">
-        <ImageView android:id="@+id/imageRectangle2"
-            android:layout_height="0dp" android:layout_width="0dp"
+
+        <ImageView
+            android:id="@+id/imageRectangle2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:scaleType="fitXY"
             android:src="@drawable/img_rectangle2"
-            app:layout_constraintBottom_toTopOf="@+id/imageUpsc11"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.12"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintGroup212"
             android:layout_height="wrap_content"
@@ -28,84 +31,86 @@
             app:layout_constraintBottom_toBottomOf="@+id/imageRectangle2"
             app:layout_constraintEnd_toEndOf="@+id/imageRectangle2"
             app:layout_constraintStart_toStartOf="@+id/imageRectangle2" app:layout_constraintTop_toTopOf="@+id/imageRectangle2">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintGroup223"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_7pxv"
-                android:layout_marginEnd="@dimen/_152pxh"
-                android:layout_marginTop="@dimen/_9pxv"
                 android:layout_width="wrap_content"
-                app:layout_constraintEnd_toStartOf="@+id/imageProfile31"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
-                <ImageView android:id="@+id/imageMenu"
-                    android:layout_height="@dimen/_47pxh"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_9pxv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageMenu"
                     android:layout_width="@dimen/_42pxh"
+                    android:layout_height="@dimen/_47pxh"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_menu"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/txtDETAILS"
                     app:layout_constraintHorizontal_bias="0.1"
-                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
-                <TextView android:ellipsize="end"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
                     android:id="@+id/txtDETAILS"
+                    style="@style/txtUbuntubold20"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_8pxv"
                     android:layout_marginStart="@dimen/_31pxh"
                     android:layout_marginTop="@dimen/_16pxv"
-                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="@{description2VM.description2Model.txtDETAILS}"
+                    android:text="@string/lbl_details"
                     app:layout_constraintBottom_toBottomOf="@+id/imageMenu"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.24"
                     app:layout_constraintStart_toEndOf="@+id/imageMenu"
-                    app:layout_constraintTop_toTopOf="@+id/imageMenu"
-                    style="@style/txtUbuntubold20" tools:text="@string/lbl_details"/>
+                    app:layout_constraintTop_toTopOf="@+id/imageMenu" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-            <ImageView android:id="@+id/imageProfile31"
-                android:layout_height="@dimen/_63pxh"
-                android:layout_width="@dimen/_71pxh"
-                android:scaleType="fitXY"
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="65dp"
+                android:layout_height="53dp"
+                android:src="@drawable/img_profile31"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.53"
+                app:layout_constraintHorizontal_bias="0.967"
                 app:layout_constraintStart_toEndOf="@+id/constraintGroup223"
                 app:layout_constraintTop_toTopOf="parent"
-                 tools:src="@drawable/img_profile31"/>
+                app:layout_constraintVertical_bias="1.0" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
-        <ImageView android:id="@+id/imageUpsc11"
-            android:layout_height="0dp"
-            android:layout_marginEnd="@dimen/_95pxh"
-            android:layout_marginStart="@dimen/_99pxh"
-            android:layout_marginTop="@dimen/_24pxv"
-            android:layout_width="0dp" android:scaleType="fitXY"
-            app:layout_constraintBottom_toTopOf="@+id/constraintGroup213"
-            app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintEnd_toEndOf="@+id/constraintGroup213"
-            app:layout_constraintStart_toStartOf="@+id/constraintGroup213"
-            app:layout_constraintTop_toBottomOf="@+id/imageRectangle2"
-            app:layout_constraintWidth_percent="0.53809524"
-         tools:src="@drawable/img_upsc11_1"/>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintGroup213"
-            android:layout_height="wrap_content"
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="320dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageUpsc11">
-            <TextView android:gravity="start"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintGroup212"
+            app:layout_constraintVertical_bias="0.945">
+
+            <TextView
                 android:id="@+id/txtTestPattern"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_21pxh"
-                android:layout_marginStart="@dimen/_40pxh"
+                style="@style/txtSolidRoundedOutline_1"
                 android:layout_width="0dp"
-                android:paddingBottom="@dimen/_18pxv"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginEnd="@dimen/_21pxh"
+                android:gravity="start"
                 android:paddingStart="@dimen/_14pxh"
                 android:paddingTop="@dimen/_17pxv"
+                android:paddingBottom="@dimen/_18pxv"
+                android:text="@string/lbl_test_pattern"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/txtDescription"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/txtSolidRoundedOutline_1" tools:text="@string/lbl_test_pattern"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/txtDescription"
@@ -118,39 +123,51 @@
                 android:paddingStart="@dimen/_5pxh"
                 android:paddingTop="@dimen/_18pxv"
                 android:paddingBottom="@dimen/_13pxv"
+                android:text="@string/lbl_description"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/txtTestPattern"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="@string/lbl_description" />
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-        <TextView android:ellipsize="end" android:gravity="start"
+
+        <TextView
             android:id="@+id/txtAboutTheExam"
+            style="@style/txtUbuntubold20_1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_29pxh"
             android:layout_marginStart="@dimen/_29pxh"
             android:layout_marginTop="@dimen/_45pxv"
-            android:layout_width="0dp" android:singleLine="true"
-            android:text="@{description2VM.description2Model.txtAboutTheExam}"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/lbl_about_the_exam"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintGroup213"
-            style="@style/txtUbuntubold20_1" tools:text="@string/lbl_about_the_exam"/>
-        <TextView android:gravity="start"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="@string/lbl_about_the_exam" />
+
+        <TextView
             android:id="@+id/txtUnionPublicSe"
+            style="@style/txtUbuntubold15_1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_29pxh"
             android:layout_marginStart="@dimen/_35pxh"
             android:layout_marginTop="@dimen/_19pxv"
-            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:gravity="start"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtAboutTheExam"
-            style="@style/txtUbuntubold15_1" tools:text="@string/msg_union_public_se"/>
+            android:text="@string/msg_union_public_se" />
 
         <ImageView
             android:id="@+id/imageRectangle242"
-            android:layout_width="202dp"
-            android:layout_height="64dp"
+            android:layout_width="200dp"
+            android:layout_height="74dp"
             android:layout_marginStart="@dimen/_70pxh"
             android:layout_marginEnd="@dimen/_86pxh"
             android:layout_marginBottom="@dimen/_27pxv"
@@ -158,24 +175,41 @@
             android:src="@drawable/img_rectangle242_1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/txtUnionPublicSe"
-            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintHorizontal_bias="0.375"
             app:layout_constraintStart_toStartOf="@+id/txtUnionPublicSe"
-            app:layout_constraintTop_toBottomOf="@+id/txtUnionPublicSe" />
-        <TextView android:ellipsize="end" android:gravity="start"
-            android:id="@+id/txtAPPLY"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_11pxv"
-            android:layout_marginEnd="@dimen/_67pxh"
-            android:layout_marginStart="@dimen/_51pxh"
+            app:layout_constraintTop_toBottomOf="@+id/txtUnionPublicSe"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txtAPPLY3"
+            style="@style/txtUbuntubold20"
+            android:layout_width="73dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/_54pxh"
             android:layout_marginTop="@dimen/_10pxv"
-            android:foregroundGravity="center"
-            android:layout_width="0dp" android:singleLine="true"
-            android:text="@{description2VM.description2Model.txtAPPLY}"
+            android:layout_marginEnd="@dimen/_64pxh"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/lbl_apply"
             app:layout_constraintBottom_toBottomOf="@+id/imageRectangle242"
             app:layout_constraintEnd_toEndOf="@+id/imageRectangle242"
+            app:layout_constraintHorizontal_bias="0.352"
             app:layout_constraintStart_toStartOf="@+id/imageRectangle242"
-            app:layout_constraintTop_toBottomOf="@+id/txtUnionPublicSe"
-            style="@style/txtUbuntubold20" tools:text="@string/lbl_apply"/>
+            app:layout_constraintTop_toTopOf="@+id/imageRectangle242"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="228dp"
+            android:layout_height="212dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintGroup213"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageRectangle2"
+            app:srcCompat="@drawable/img_upsc11" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
