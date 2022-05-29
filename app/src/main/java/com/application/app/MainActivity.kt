@@ -10,6 +10,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -32,6 +33,39 @@ class MainActivity : AppCompatActivity() {
         actionBarDrawerToggle.syncState()
 
         navigationView.setNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.jobsportal ->{
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frame,Jobs())
+                        
+                    drawerLayout.closeDrawers()
+                }
+                R.id.examportal ->{
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frame,Exams())
+
+                    drawerLayout.closeDrawers()
+                }
+                R.id.docupload ->{
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frame,DocumentsUpload())
+
+                    drawerLayout.closeDrawers()
+                }
+                R.id.exammaterials ->{
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frame,Exammat1())
+
+                    drawerLayout.closeDrawers()
+                }
+                R.id.profile ->{
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frame,profile())
+
+                    drawerLayout.closeDrawers()
+                }
+                
+            }
 
             return@setNavigationItemSelectedListener true
 
@@ -54,5 +88,25 @@ class MainActivity : AppCompatActivity() {
             drawerLayout.openDrawer(GravityCompat.START)
         }
     }
+
+}
+
+private fun FragmentTransaction.replace(frame: Int, profile: profile) {
+
+}
+
+private fun FragmentTransaction.replace(frame: Int, exammat1: Exammat1) {
+
+}
+
+private fun FragmentTransaction.replace(frame: Int, documentsUpload: DocumentsUpload) {
+
+}
+
+private fun FragmentTransaction.replace(frame: Int, exams: Exams) {
+
+}
+
+private fun FragmentTransaction.replace(frame: Int, jobs: Jobs) {
 
 }
