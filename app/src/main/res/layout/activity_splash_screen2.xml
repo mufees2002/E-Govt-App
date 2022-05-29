@@ -4,21 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash_Screen">
-    <ImageView android:id="@+id/imageLogo1"
+    tools:context=".Splash_Screen"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageLogo1"
+        android:layout_width="@dimen/_295pxh"
         android:layout_height="@dimen/_132pxh"
-        android:layout_marginBottom="@dimen/_302pxv"
-        android:layout_marginEnd="@dimen/_74pxh"
         android:layout_marginStart="@dimen/_54pxh"
         android:layout_marginTop="@dimen/_306pxv"
-        android:layout_width="@dimen/_295pxh"
+        android:layout_marginEnd="@dimen/_74pxh"
+        android:layout_marginBottom="364dp"
         android:scaleType="fitXY"
         android:src="@drawable/img_logo1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent
-        "/>
+        " />
+
     <TextView android:gravity="center"
         android:id="@+id/txtPORTALFORGOV"
         android:layout_height="wrap_content"

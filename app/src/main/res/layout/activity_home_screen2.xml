@@ -34,7 +34,6 @@
         android:paddingTop="@dimen/_17pxv"
         android:paddingBottom="@dimen/_17pxv"
         android:singleLine="true"
-        android:text="@string/msg_search_job_exa"
         android:textColorHint="@color/gray_900_8c"
         app:layout_constraintEnd_toEndOf="@+id/constraintBackground"
         app:layout_constraintStart_toStartOf="@+id/constraintBackground"
@@ -83,38 +82,30 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <ScrollView
+    <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="334dp"
-        android:layout_height="190dp"
+        android:layout_width="409dp"
+        android:layout_height="133dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="338dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="350dp">
 
         <androidx.recyclerview.widget.RecyclerView
-            itemSpace="@{@dimen/_16pxh}"
-            android:layout_width="411dp"
-            android:layout_height="641dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="355dp"
+            android:layout_height="137dp"
             tools:ignore="MissingConstraints"
-            tools:itemCount="1"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="95dp"
-            tools:listitem="@layout/recommendations">
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="350dp">
 
         </androidx.recyclerview.widget.RecyclerView>
-    </ScrollView>
-
+    </HorizontalScrollView>
     <TextView
         android:id="@+id/recent"
         style="@style/txtUbuntubold14_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_24pxh"
-        android:layout_marginTop="548dp"
+        android:layout_marginTop="508dp"
         android:layout_marginEnd="@dimen/_24pxh"
         android:ellipsize="end"
         android:gravity="start"
@@ -124,14 +115,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="309dp"
         android:layout_height="127dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="592dp"></androidx.recyclerview.widget.RecyclerView>
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="559dp"
+        tools:ignore="MissingConstraints">
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

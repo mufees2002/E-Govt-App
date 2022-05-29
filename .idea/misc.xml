@@ -9,13 +9,16 @@
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_home_page.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_jobs_portal.xml" value="0.22" />
         <entry key="..\:/Users/Shivani.B/Downloads/application3/app/src/main/res/layout/activity_login_page.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/border.xml" value="0.24564102564102563" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_bg.xml" value="0.24564102564102563" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_bg_1.xml" value="0.24564102564102563" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_iconly_broken_search.xml" value="0.24564102564102563" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_iconlybrokenb.xml" value="0.24564102564102563" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_menu.xml" value="0.24564102564102563" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_rectangle12.xml" value="0.24564102564102563" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_rectangle12_1.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_rectangle2.xml" value="0.24564102564102563" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_rectangle22_1.xml" value="0.24564102564102563" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_rectangle242.xml" value="0.24564102564102563" />
@@ -28,38 +31,48 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_scaleoption.xml" value="0.24564102564102563" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/img_scaleoption_1.xml" value="0.24564102564102563" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/rectangle_bg_black_900.xml" value="0.24564102564102563" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/rectangle_bg_black_900_border_black_900_radius_22.xml" value="0.23981481481481481" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/rectangle_bg_black_900_radius_100.xml" value="0.23981481481481481" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/rectangle_bg_black_900_radius_20.xml" value="0.23981481481481481" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/rectangle_bg_bluegray_900_radius_100.xml" value="0.23981481481481481" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/rectangle_bg_gray_100_border_gray_200_radius_4.xml" value="0.23981481481481481" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/rectangle_bg_white_a700.xml" value="0.23981481481481481" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/rectangle_bg_white_a700_border_black_900_radius_22.xml" value="0.23981481481481481" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/rectangle_bg_white_a700_border_black_900_radius_32_5.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/drawable/rectangle_border_black_900.xml" value="0.24564102564102563" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_android_large_14.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_app_navigation.xml" value="0.23333333333333334" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_com_exam.xml" value="0.12447916666666667" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_com_exam_pattern.xml" value="0.12447916666666667" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_com_exam.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_com_exam_pattern.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_description1.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_description2.xml" value="0.14990942028985507" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_documents_upload.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_documents_upload.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exam_descripiton.xml" value="0.15489130434782608" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exam_material1.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exam_material2.xml" value="0.14990942028985507" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exam_pattern.xml" value="0.15489130434782608" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exam_pattern.xml" value="0.152" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exam_portal.xml" value="0.14356884057971014" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exam_test_pattern.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exammat1.xml" value="0.176" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exammat1.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exammat2.xml" value="0.2" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exams.xml" value="0.176" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_exams.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_general_details.xml" value="0.14990942028985507" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_general_details2.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_home_page.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_home_screen.xml" value="0.176" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_jobs.xml" value="0.17527173913043478" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_home_screen2.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_jobs.xml" value="0.2" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_jobs_portal.xml" value="0.14990942028985507" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_login_page.xml" value="0.23333333333333334" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_login_page2.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_login_page2.xml" value="0.3370967741935484" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_main.xml" value="0.17255434782608695" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_main2.xml" value="0.17255434782608695" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_menu_bar.xml" value="0.234375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_profile.xml" value="0.1" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_profile2.xml" value="0.37462235649546827" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_profile3.xml" value="0.4" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_profile2.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_profile3.xml" value="0.2" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_register_page.xml" value="0.14990942028985507" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_registertion_page.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_registertion_page.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_splash_screen.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_splash_screen2.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/activity_testpattern1.xml" value="0.23333333333333334" />
@@ -72,7 +85,7 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/materials2.xml" value="0.192481884057971" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/profile1.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/recentjobs.xml" value="0.264" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/recommendations.xml" value="0.17255434782608695" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/recommendations.xml" value="0.4" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/row_general_details1.xml" value="0.14990942028985507" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/application3/app/src/main/res/layout/row_jobs_portal1.xml" value="0.14990942028985507" />
       </map>

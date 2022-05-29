@@ -14,6 +14,8 @@
     <string name="lbl_exam_material2">Exam material2</string>
     <string name="msg_android_large">Android Large - 14</string>
     <string name="lbl_upload">Upload</string>
+    <string name="lbl_appiledex">Appiled Exam</string>
+    <string name="lbl_appliedjob">Applied Jobs</string>
     <string name="msg_exam_material_v">Exam material videos</string>
     <string name="lbl_recommendations">Recommendations</string>
     <string name="lbl_exam_material1">Exam material1</string>

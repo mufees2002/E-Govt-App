@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.application.app">
+    package="com.application.app" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".appcomponents.di.MyApp"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,45 +14,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true" >
         <activity
-            android:name=".Exammat2"
+            android:name=".MenuBar"
             android:exported="false" />
         <activity
             android:name=".Exammat1"
             android:exported="false" />
         <activity
-            android:name=".ComExamPattern"
-            android:exported="false" />
-        <activity
-            android:name=".ComExam"
-            android:exported="false" />
-
-        <activity
-            android:name=".ExamDescripiton"
-            android:exported="false" />
-
-
-        <activity
             android:name=".ExamTestPattern"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ComExamPattern"
             android:exported="false" />
         <activity
             android:name=".Jobs"
             android:exported="false" />
         <activity
+            android:name=".ComExam"
+            android:exported="false" />
+        <activity
+            android:name=".ExamDescripiton"
+            android:exported="false" />
+        <activity
+            android:name=".DocumentsUpload"
+            android:exported="false" />
+        <activity
             android:name=".Exams"
+            android:exported="false" />
+        <activity
+            android:name=".Profile3"
             android:exported="false" />
         <activity
             android:name=".profile"
             android:exported="false" />
         <activity
-            android:name=".HomeScreen"
+            android:name=".LoginPage"
             android:exported="false" />
         <activity
-            android:name=".DocumentsUpload"
+            android:name=".HomeScreen"
             android:exported="false" />
         <activity
             android:name=".General_details"
@@ -62,63 +61,18 @@
             android:name=".RegistertionPage"
             android:exported="false" />
         <activity
-            android:name=".LoginPage"
+            android:name=".Exammat2"
             android:exported="false" />
         <activity
             android:name=".Splash_Screen"
-            android:exported="false" />
-        <activity
-            android:name=".modules.loginpage.ui.LoginPageActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".modules.appnavigation.ui.AppNavigationActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.splashscreen.ui.SplashScreenActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.description2.ui.Description2Activity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.description1.ui.Description1Activity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.generaldetails.ui.GeneralDetailsActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.androidlarge14.ui.AndroidLarge14Activity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.jobsportal.ui.JobsPortalActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.exammaterial1.ui.ExamMaterial1Activity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.exammaterial2.ui.ExamMaterial2Activity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.registerpage.ui.RegisterPageActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.testpattern1.ui.Testpattern1Activity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.homepage.ui.HomePageActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.examportal.ui.ExamPortalActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".modules.uploadpage.ui.UploadPageActivity"
-            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
