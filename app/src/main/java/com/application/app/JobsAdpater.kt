@@ -29,13 +29,11 @@ interface  OnItemClickListener{
     fun  OnItemClick(position: Int)
 }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        TODO("Not yet implemented")
         val view=LayoutInflater.from(parent.context).inflate(R.layout.jobs,parent,false);
         return  ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
 
         val item=n[position];
         holder.image.setImageResource(item.image);
@@ -47,6 +45,6 @@ interface  OnItemClickListener{
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+     return  n.size
     }
 }

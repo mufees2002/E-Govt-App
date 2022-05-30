@@ -54,49 +54,39 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.023" />
 
+
         <TextView
             android:id="@+id/txtDOCUMENTUPLOAD2"
             style="@style/txtUbuntubold20"
             android:layout_width="206dp"
             android:layout_height="24dp"
-            android:layout_marginTop="28dp"
             android:layout_marginEnd="120dp"
 
             android:ellipsize="end"
             android:singleLine="true"
             android:text="@string/lbl_jobs"
-            app:layout_constraintBottom_toTopOf="@+id/recyclerView2"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.952"
             app:layout_constraintStart_toStartOf="@+id/imageRectangle"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.041" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView2"
+            android:id="@+id/recyclerView6"
             itemSpace="@{@dimen/_16pxh}"
-            android:layout_width="411dp"
-            android:layout_height="641dp"
+            android:layout_width="408dp"
+            android:layout_height="640dp"
+            android:layout_marginTop="90dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageRectangle"
+            app:layout_constraintVertical_bias="1.0"
             tools:ignore="MissingConstraints"
-            tools:itemCount="1"
-            tools:listitem="@layout/exam" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="411dp"
-            android:layout_height="641dp"
-            tools:layout_editor_absoluteX="0dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:layout_editor_absoluteY="95dp"
-            tools:ignore="MissingConstraints"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            itemSpace="@{@dimen/_16pxh}" tools:itemCount="1" tools:listitem="@layout/jobs"/>
+            tools:listitem="@layout/jobs" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

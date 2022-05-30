@@ -35,7 +35,6 @@ interface  OnItemClickListener{
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
         val item=n[position];
         holder.image.setImageResource(item.image)
         holder.text.text=item.name
@@ -44,7 +43,7 @@ interface  OnItemClickListener{
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+  return  n.size
     }
 
 

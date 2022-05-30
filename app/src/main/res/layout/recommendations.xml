@@ -1,72 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:layout_marginRight="15dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintGroup159"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_40pxv"
-        android:layout_width="0dp"
+        android:layout_width="170dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
         tools:ignore="MissingConstraints">
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintGroup158"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/constraintGroup167"
+            style="@style/groupStylewhite_4"
+            android:layout_width="162dp"
+            android:layout_height="143dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="42dp">
+            app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintGroup167"
-                style="@style/groupStylewhite_4"
-                android:layout_width="162dp"
-                android:layout_height="143dp"
-                android:layout_marginEnd="196dp"
+            <ImageView
+                android:id="@+id/imageUpsc11"
+                android:layout_width="@dimen/_79pxh"
+                android:layout_height="@dimen/_73pxh"
+                android:layout_marginStart="@dimen/_36pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_marginEnd="@dimen/_61pxh"
+                android:scaleType="fitXY"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/img_upsc11" />
 
-                <ImageView
-                    android:id="@+id/imageUpsc11"
-                    android:layout_width="@dimen/_79pxh"
-                    android:layout_height="@dimen/_73pxh"
-                    android:layout_marginStart="@dimen/_36pxh"
-                    android:layout_marginTop="@dimen/_17pxv"
-                    android:layout_marginEnd="@dimen/_61pxh"
-                    android:scaleType="fitXY"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@drawable/img_upsc11" />
-
-                <TextView
-                    android:id="@+id/txtApplyNow"
-                    style="@style/txtSolidRounded_1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_76pxh"
-                    android:layout_marginTop="@dimen/_11pxv"
-                    android:layout_marginEnd="@dimen/_35pxh"
-                    android:layout_marginBottom="@dimen/_20pxv"
-                    android:gravity="center"
-                    android:paddingStart="@dimen/_12pxh"
-                    android:paddingTop="@dimen/_5pxv"
-                    android:paddingEnd="@dimen/_11pxh"
-                    android:paddingBottom="@dimen/_6pxv"
-                    android:text="@{homePageVM.homePageModel.txtApplyNow}"
-                    android:textSize="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageUpsc11"
-                    app:layout_constraintVertical_bias="0.0"
-                    tools:text="@string/lbl_apply_now" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/txtApplyNow"
+                style="@style/txtSolidRounded_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_76pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_35pxh"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:gravity="center"
+                android:paddingStart="@dimen/_12pxh"
+                android:paddingTop="@dimen/_5pxv"
+                android:paddingEnd="@dimen/_11pxh"
+                android:paddingBottom="@dimen/_6pxv"
+                android:text="@{homePageVM.homePageModel.txtApplyNow}"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageUpsc11"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="@string/lbl_apply_now" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

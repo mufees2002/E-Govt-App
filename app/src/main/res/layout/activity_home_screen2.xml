@@ -49,63 +49,65 @@
         app:layout_constraintBottom_toBottomOf="@+id/etSearchJobExa"
         app:layout_constraintEnd_toEndOf="@+id/etSearchJobExa"
         app:layout_constraintStart_toStartOf="@+id/etSearchJobExa" app:layout_constraintTop_toTopOf="@+id/etSearchJobExa"/>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintGroup159"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_40pxv"
-        android:layout_width="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSearchJobExa" style="@style/groupStylewhite_A700">
-        <TextView android:ellipsize="end" android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@+id/etSearchJobExa">
+
+        <TextView
             android:id="@+id/txtRecommendations"
+            style="@style/txtUbuntubold14_1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_24pxh"
             android:layout_marginStart="@dimen/_24pxh"
             android:layout_marginTop="@dimen/_10pxv"
-            android:textSize="20dp"
-            android:layout_width="0dp" android:singleLine="true"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
             android:text="@string/lbl_recommendations"
+            android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            style="@style/txtUbuntubold14_1" tools:text="@string/lbl_recommendations"/>
+            tools:text="@string/lbl_recommendations" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintGroup158"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_17pxv"
-            android:layout_marginTop="@dimen/_4pxv"
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_marginBottom="@dimen/_17pxv"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtRecommendations"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRecommendations" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
-        android:layout_width="409dp"
-        android:layout_height="133dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="350dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="405dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="37dp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintGroup159"
+        tools:ignore="MissingConstraints">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="355dp"
-            android:layout_height="137dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="350dp">
+    </androidx.recyclerview.widget.RecyclerView>
 
-        </androidx.recyclerview.widget.RecyclerView>
-    </HorizontalScrollView>
     <TextView
         android:id="@+id/recent"
         style="@style/txtUbuntubold14_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_24pxh"
-        android:layout_marginTop="508dp"
         android:layout_marginEnd="@dimen/_24pxh"
         android:ellipsize="end"
         android:gravity="start"
@@ -115,16 +117,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="309dp"
-        android:layout_height="127dp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="559dp"
-        tools:ignore="MissingConstraints">
-    </androidx.recyclerview.widget.RecyclerView>
+        android:id="@+id/recyclerView12"
+        itemSpace="@{@dimen/_16pxh}"
+        android:layout_width="400dp"
+        android:layout_height="186dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recent"
+        tools:ignore="MissingConstraints"
+        ></androidx.recyclerview.widget.RecyclerView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.application.app" >
+    package="com.application.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp"
-        android:usesCleartextTraffic="true" >
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Recent_Jobs"
+            android:exported="false" />
         <activity
             android:name=".MenuBar"
             android:exported="false" />
@@ -40,19 +43,19 @@
             android:name=".DocumentsUpload"
             android:exported="false" />
         <activity
-            android:name=".Exams"
-            android:exported="false" />
-        <activity
-            android:name=".Profile3"
+            android:name=".HomeScreen"
             android:exported="false" />
         <activity
             android:name=".profile"
             android:exported="false" />
         <activity
+            android:name=".Exams"
+            android:exported="false" />
+        <activity
             android:name=".LoginPage"
             android:exported="false" />
         <activity
-            android:name=".HomeScreen"
+            android:name=".Splash_Screen"
             android:exported="false" />
         <activity
             android:name=".General_details"
@@ -64,9 +67,9 @@
             android:name=".Exammat2"
             android:exported="false" />
         <activity
-            android:name=".Splash_Screen"
+            android:name=".Profile3"
             android:exported="true"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

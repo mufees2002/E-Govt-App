@@ -14,12 +14,12 @@
         android:layout_marginStart="@dimen/_31pxh"
         android:layout_marginTop="@dimen/_30pxv"
         android:layout_marginEnd="@dimen/_39pxh"
-        android:layout_marginBottom="532dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114">
 
         <ImageView
             android:id="@+id/imageIconlyBrokenB"
@@ -67,8 +67,7 @@
             app:layout_constraintEnd_toStartOf="@+id/imageIconlyBrokenB"
             app:layout_constraintHorizontal_bias="0.07"
             app:layout_constraintStart_toEndOf="@+id/imageUpsc12"
-            app:layout_constraintTop_toTopOf="@+id/imageUpsc12"
-             />
+            app:layout_constraintTop_toTopOf="@+id/imageUpsc12" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

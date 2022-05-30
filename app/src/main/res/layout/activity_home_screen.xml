@@ -83,38 +83,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <ScrollView
-        android:id="@+id/horizontalScrollView"
-        android:layout_width="334dp"
-        android:layout_height="190dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="338dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            itemSpace="@{@dimen/_16pxh}"
-            android:layout_width="411dp"
-            android:layout_height="641dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:itemCount="1"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="95dp"
-            tools:listitem="@layout/recommendations">
-
-        </androidx.recyclerview.widget.RecyclerView>
-    </ScrollView>
-
     <TextView
         android:id="@+id/recent"
         style="@style/txtUbuntubold14_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_24pxh"
-        android:layout_marginTop="548dp"
+        android:layout_marginTop="544dp"
         android:layout_marginEnd="@dimen/_24pxh"
         android:ellipsize="end"
         android:gravity="start"
@@ -122,16 +97,27 @@
         android:text="Recent Jobs and Exams"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView5"
         android:layout_width="309dp"
         android:layout_height="127dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="22dp"
         tools:layout_editor_absoluteY="592dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="409dp"
+        android:layout_height="209dp"
+        android:layout_marginBottom="184dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSearchJobExa"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
