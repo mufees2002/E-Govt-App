@@ -221,6 +221,21 @@
             app:layout_constraintTop_toBottomOf="@+id/imageRectangle2"
             app:layout_constraintVertical_bias="0.755"
             app:srcCompat="@drawable/img_gate33" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/txtUbuntubold20"
+            android:layout_width="261dp"
+            android:layout_height="56dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/lbl_view"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/imageRectangle242"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtAptitudeTechn"
+            app:layout_constraintVertical_bias="0.422" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

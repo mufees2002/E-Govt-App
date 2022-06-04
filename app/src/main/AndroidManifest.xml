@@ -28,7 +28,7 @@
             android:name=".ExamTestPattern"
             android:exported="false" />
         <activity
-            android:name=".ComExamPattern"
+            android:name=".ExamPattern"
             android:exported="false" />
         <activity
             android:name=".Jobs"
@@ -58,7 +58,7 @@
             android:name=".Splash_Screen"
             android:exported="false" />
         <activity
-            android:name=".General_details"
+            android:name=".ComExamPattern"
             android:exported="false" />
         <activity
             android:name=".RegistertionPage"
@@ -67,7 +67,7 @@
             android:name=".Exammat2"
             android:exported="false" />
         <activity
-            android:name=".Profile3"
+            android:name=".General_details"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

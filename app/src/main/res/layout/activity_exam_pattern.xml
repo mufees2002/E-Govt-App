@@ -96,8 +96,10 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintGroup243">
+            app:layout_constraintTop_toBottomOf="@+id/constraintGroup243"
+            app:layout_constraintVertical_bias="0.463">
 
             <TextView
                 android:id="@+id/txtTestPattern"
@@ -140,13 +142,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_17pxh"
-            android:layout_marginTop="@dimen/_53pxv"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="@dimen/_17pxh"
             android:ellipsize="end"
             android:gravity="start"
             android:singleLine="true"
             android:text="@string/lbl_test_pattern"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintGroup244"
             tools:text="@string/msg_pattern_for_the" />
@@ -157,33 +160,27 @@
             android:layout_width="371dp"
             android:layout_height="56dp"
             android:layout_marginStart="@dimen/_31pxh"
-            android:layout_marginTop="@dimen/_45pxv"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="@dimen/_9pxh"
-            android:layout_marginBottom="@dimen/_11pxv"
             android:text="@string/msg_preliminary_exa2"
-            app:layout_constraintBottom_toBottomOf="@+id/txtAPPLY"
             app:layout_constraintEnd_toEndOf="@+id/imageRectangle242"
             app:layout_constraintHorizontal_bias="0.07"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtPatternForThe"
-            app:layout_constraintVertical_bias="0.0"
             tools:text="@string/msg_preliminary_exa" />
 
         <ImageView
             android:id="@+id/imageRectangle242"
             android:layout_width="182dp"
             android:layout_height="69dp"
-            android:layout_marginStart="@dimen/_87pxh"
-            android:layout_marginTop="@dimen/_122pxv"
-            android:layout_marginEnd="@dimen/_105pxh"
-            android:layout_marginBottom="@dimen/_56pxv"
             android:scaleType="fitXY"
             android:src="@drawable/img_rectangle242_3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.28"
-            app:layout_constraintStart_toStartOf="@+id/txtPreliminaryExa"
-            app:layout_constraintTop_toTopOf="@+id/txtPreliminaryExa" />
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPreliminaryExa"
+            app:layout_constraintVertical_bias="0.859" />
 
         <TextView
             android:id="@+id/txtAPPLY"
@@ -217,5 +214,22 @@
             app:layout_constraintTop_toBottomOf="@+id/imageRectangle2"
             app:layout_constraintVertical_bias="0.324"
             app:srcCompat="@drawable/img_upsc11" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/txtUbuntubold20"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:layout_width="261dp"
+            android:layout_height="56dp"
+            android:text="@string/lbl_view"
+            app:layout_constraintBottom_toTopOf="@+id/imageRectangle242"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPreliminaryExa"
+            app:layout_constraintVertical_bias="0.258" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
