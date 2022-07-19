@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.vmadalin:easypermissions-ktx:0.1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/36a83a85ca605ff52eed25c427b063ed/transformed/jetified-easypermissions-ktx-0.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/36a83a85ca605ff52eed25c427b063ed/transformed/jetified-easypermissions-ktx-0.1.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/36a83a85ca605ff52eed25c427b063ed/transformed/jetified-easypermissions-ktx-0.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/442a63e91c732755788e3dd8a6dd5b86/transformed/jetified-easypermissions-ktx-0.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/442a63e91c732755788e3dd8a6dd5b86/transformed/jetified-easypermissions-ktx-0.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/442a63e91c732755788e3dd8a6dd5b86/transformed/jetified-easypermissions-ktx-0.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vmadalin/easypermissions-ktx/0.1.0/e037071e0864ced2f947cda4842efc243cea3157/easypermissions-ktx-0.1.0-javadoc.jar!/" />

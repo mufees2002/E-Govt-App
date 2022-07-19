@@ -1,2 +1,10 @@
 include ':app'
 rootProject.name = "application3"
+
+dependencyResolutionManagement {
+    repositories {
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+    }
+}

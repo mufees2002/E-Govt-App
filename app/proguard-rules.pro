@@ -142,3 +142,15 @@
 -keepclassmembers class androidx.** { *; }
 -keep class android.arch.** { *; }
 -dontwarn android.arch.**
+
+-ignorewarnings
+-keepattributes InnerClasses
+-keepattributes SourceFileLineNumberTable
+-keep class com.hianalytics.android.**{*;}
+-keep class com.huawei.updatesdk.**{*;}
+-keep class com.huawei.hms.**{*;}
+
+
+
+
+
